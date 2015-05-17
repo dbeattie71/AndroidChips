@@ -1,0 +1,44 @@
+<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  
+  <attr path="/api/package[@name='com.android.ex.chips.RecipientEntry']/class[@name='BaseRecipientChip']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.android.ex.chips.recipientchip']/class[@name='BaseRecipientChip']" name="managedName">IBaseRecipientChip</attr>
+  
+  C:\Users\dbeattie\AppData\Local\Android\sdk\extras\android\support\v4
+  
+  http://forums.xamarin.com/discussion/12627/java-binding-member-cannot-be-accessed-from-outside-package
+  http://forums.xamarin.com/discussion/1156/adding-android-universal-image-loader-library/p1
+  https://forums.xamarin.com/discussion/16534/package-android-support-v4-app-does-not-exist
+  http://www.stuffon.net/2014/05/useful-tools-to-help-with-xamarin.html
+  https://forums.xamarin.com/discussion/16503/android-bindings-has-unknown-base-type-of
+  http://stackoverflow.com/questions/20444458/porting-card-io-to-c-sharp-xamarin-studio
+  -->
+
+  <attr path="/api/package[@name='com.android.ex.chips.recipientchip']/interface[@name='BaseRecipientChip']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.android.ex.chips']/class[@name='BaseRecipientAdapter.DirectorySearchParams']/field[@name='filter']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.android.ex.chips']/class[@name='BaseRecipientAdapter.DirectoryFilter']" name="visibility">public</attr>
+
+  <!--<attr path="/api/package[@name='com.android.ex.chips']/class[@name='BaseRecipientAdapter']/method[@name='fetchPhoto' and count(parameter)=3 and parameter[1][@type='com.android.ex.chips.RecipientEntry'] and parameter[2][@type='android.net.Uri'] and parameter[3][@type='android.content.ContentResolver']]">protected</attr>-->
+
+  <remove-node path="/api/package[@name='com.android.ex.chips']/class[@name='BaseRecipientAdapter']/method[@name='getItem' and count(parameter)=1 and parameter[1][@type='int']]" />
+  <remove-node path="/api/package[@name='com.android.ex.chips']/class[@name='RecipientEditTextView.IndividualReplacementTask']/method[@name='doInBackground' and count(parameter)=1 and parameter[1][@type='java.util.ArrayList&lt;com.android.ex.chips.recipientchip.DrawableRecipientChip&gt;...']]" />
+  <remove-node path="/api/package[@name='com.android.ex.chips']/interface[@name='RecipientAlternatesAdapter.OnCheckedItemChangedListener']" />
+
+  <!--<remove-node path="/api/package[@name='com.android.ex.chips']/interface[@na‌​me='AuthenticationClient.AuthenticationCompleteListener']" />-->
+  <!--<remove-node path="/api/package[@name='com.android.ex.chips']/class[@name='RecipientEditTextView']/method[@name='onCheckedItemChanged' and count(parameter)=1 and parameter[1][@type='int']]" />-->
+  <!--<attr path="/api/package[@name='com.android.ex.chips']/interface[@name='RecipientAlternatesAdapter.OnCheckedItemChangedListener']" name="visibility">public</attr>-->
+  <!--<attr path="/api/package[@name='com.android.ex.chips']/class[@name='BaseRecipientAdapter']/method[@name='getItem' and count(parameter)=1 and parameter[1][@type='int']]">public</attr>-->
+  <!--<attr path="/api/package[@name='com.android.ex.chip']/class[@name='BaseRecipientAdapter']/method[@name='getAdapter']" name="managedReturn">Java.Lang.Object</attr>-->
+  <!--<attr path="/api/package[@name='com.android.ex.chips']/class[@name='BaseRecipientAdapter']" name="extends">BaseAdapter</attr>-->
+  <!--<attr path="/api/package[@name='com.android.ex.chips']/class[@name='RecipientAlternatesAdapter']/interface[@name='OnCheckedItemChangedListener']" name="visibility">public</attr>-->
+  <!--<attr path="/api/package[@name='com.android.ex.chips']/class[@name='BaseRecipientAdapter']" name="managedName">BaseRecipientAdapterEx</attr>-->
+  <!--<remove-node path="/api/package[@name='com.android.ex.chips']/class[@name='BaseRecipientAdapter']/method[@name='setAccount' and count(parameter)=1 and parameter[1][@type='android.accounts.Account']]" />-->
+</metadata>
+
+
+
